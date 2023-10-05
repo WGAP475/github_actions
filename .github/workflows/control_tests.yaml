@@ -5,8 +5,8 @@ jobs:
     name: Check tests
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout on master
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@@v4.1.0
 
       - name: Set up Python
         uses: actions/setup-python@master
@@ -24,4 +24,4 @@ jobs:
 
       - name: Run flake8
         uses: py-actions/flake8@v2
-        
+          
